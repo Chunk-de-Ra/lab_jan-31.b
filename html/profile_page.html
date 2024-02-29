@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Profile of {{name}}
+        </title>
+    </head>
+    <body>
+        <img id="pfp" src = "/static/pfp_alice.jpg" width="100" height="100">
+        <h2>Name: <span id="uname">{{name}}</span></h2>
+        <p>Birthday: <span id="bday">{{bday}}</span></p>
+        <p>Email: <span id="email">{{email}}</span></p>
+        <br>
+        <form action>
+            Change profile pic: <input type="file" id="pfpU">
+            <input type="button" value="Update" onclick="updatePFP()">
+            <br>
+            Change username: <input type="text" id="unameU">
+            <input type="button" value="Update" onclick="updateUName()">
+            <br>
+            Change birthdate: <input type="date" id="bdayU">
+            <input type="button" value="Update" onclick="updateBdate()">
+        </form>
+    </body>
+    <script src="/static/profile_page.js"></script>
+</html>
